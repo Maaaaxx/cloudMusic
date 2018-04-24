@@ -1,0 +1,165 @@
+*{margin: 0;border: 0;box-sizing: border-box}
+*::before,*::after{margin: 0;border: 0;box-sizing: border-box}
+ol{list-style: none;padding: 0}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+
+
+.page{
+    /* display: flex;
+    flex-direction: column; */
+    background: #FCFCFD;
+}
+
+header{
+    background: #D43C33;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.3vw 2.5vw;
+}
+header .logo{
+    width: 38vw;
+}
+header>a{
+    text-decoration: none;
+    height: 8.5vw;
+    width: 21vw;
+    line-height: 8vw;
+    font-size: 4vw;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.623);
+    border-radius: 20vw;
+    color: #fff;
+}
+.navTab{
+    border-bottom: 1px solid #ddd;
+    font-size: 4vw;
+}
+.navTab>ol{
+    text-align: center;
+    line-height: 10vw;
+    display: flex;
+    font-weight: 400;
+}
+.navTab>ol>li{
+    width: 1px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+.navTab>ol>li.active{
+    color: #D43C33;
+}
+.navTab>ol>li.active span{
+    display: inline-block;
+    padding: 0 1vw;
+    border-bottom: 2px solid #D43C33;
+}
+.recommend{
+    margin-top: 5vw;
+}
+.recommend .title>span{
+    display: block;
+    font-size: 4.5vw;
+    width: 100%;
+    margin: 5vw 0;
+    padding: 0 2vw;
+    border-left:2px solid #D43C33;
+    line-height: 1;
+}
+.recommend .songList{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1px;
+    grid-gap:4.5vw 1vw;
+    margin-bottom: 12vw;
+}
+.recommend .songList>a{
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-size: 3.5vw;
+}
+.recommend .songList .remd-im>span{
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    color: white;
+    font-size: 3vw;
+}
+.recommend .songList>a img{
+    width: 100%;
+}
+.recommend .songList p{
+    margin: 0.5vw 1vw 0 1.6vw; 
+    height: 8vw;
+    line-height: 1.2;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.recommend .newList>a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    display: block;
+    padding: 2vw 2vw 2vw 0;
+    margin-left: 2.5vw;
+    border-bottom: 0.5px solid #F0F0F1;
+}
+.recommend .newList>a .songName{
+    font-size: 4.5vw;
+}
+.recommend .newList span{
+    color: rgb(136, 136, 136);
+}
+.recommend .newList>a .singer{
+    font-size: 3.2vw;
+    color: rgb(136, 136, 136);
+}
+.recommend .newList>a .play{
+    font-size: 5.5vw;
+    position: absolute;
+    right: 3vw;
+    top: 5vw;
+    fill: #AEAEAE;
+}
+footer{
+    background: url(https://s1.ax1x.com/2018/04/23/CQBSRU.png);
+    padding-top: 16.9%;
+    padding-bottom: 4vw;
+}
+footer .logo{
+    width: 61vw;
+    height: 12vw;
+    display: block;
+    margin: 0 auto;
+    font-size: 4vw;
+    color: rgb(51, 51, 51);
+}
+
+footer .button{
+    display: block;
+    text-decoration: none;
+    color: #DF716B;
+    border: 1px solid #DF716B;
+    font-size: 4.2vw;
+    width: 80vw;
+    margin: 4vw auto 1vw auto;
+    border-radius: 10vw;
+    line-height: 2.3;
+    text-align: center;
+}
+footer p{
+    font-size: 3vw;
+    transform: scale(.75);
+    text-align: center;
+}

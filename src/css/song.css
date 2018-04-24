@@ -1,0 +1,114 @@
+*{margin: 0;border: 0;box-sizing: border-box}
+*::before,*::after{margin: 0;border: 0;box-sizing: border-box}
+@keyframes circle{
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+body{
+    background: transparent url(http://p4.music.126.net/In10kPOZy8RBxX9Kfw_VRQ==/109951163242917821.jpg) no-repeat;
+    background-size: cover;
+}
+.page{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2vh 2vw;
+}
+.page .pointer>img{
+    width:23vw;
+}
+.page .pointer{
+    height:17vh;
+    position: absolute;
+    top: 0;
+    left: 47%;
+    z-index: 10;
+}
+.page .disc-container .disc{
+    overflow: hidden;
+    margin: 4vh auto 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page .disc-container .disc .bg{
+    height:75vw;
+}
+.page .disc-container .disc .light{
+    height:75vw;
+    position: absolute;
+    z-index: 1;
+}
+.page .disc-container .disc .cover{
+    height:48vw;
+    border-radius: 50%;
+    position: absolute;
+}
+.page .disc-container .playing .light,
+.page .disc-container .playing .cover{
+    animation: circle 20s infinite linear;
+}
+.page .disc-container .paused .light,
+.page .disc-container .paused .cover{
+    animation-play-state:paused;
+}
+.page .disc-container .disc .pause{
+    display: none;
+}
+.page .disc-container .paused .pause{
+    display: block;
+    height:13.8vw;
+    position: absolute;
+}
+.page .song-info{
+    flex-grow: 1;
+    width: 81vw;
+    margin: 3vh auto 0 auto;
+    color: rgb(181, 181, 181);
+    text-align: center;
+}
+.page .song-info>.title{
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 1.5vh;
+}
+.page .song-info .lyric{
+    height: 15vh;
+    overflow: hidden;
+    font-family: Helvetica, sans-serif;
+    line-height: 2;
+}
+.page .song-info .active{
+    color: white;
+}
+.page .links{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+.page .links>a{
+    text-decoration: none;
+    display: block;
+    width: 45vw;
+    height: 6vh;
+    border: 1px solid #D33A31;
+    border-radius: 40px;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 6vh;
+    color: #D33A31;
+}
+.page .links .down{
+    background: #D33A31;
+    color: white;
+}
