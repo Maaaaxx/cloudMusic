@@ -1,5 +1,5 @@
 $(function(){
-    $.get('../../lyric.json').then(function(object){
+    $.get('https://raw.githubusercontent.com/Maaaaxx/cloudMusic/master/lyric.json').then(function(object){
         let {lyric} = object
         let lycArr = lyric.split('\n')
         let reg = /^\[(.+)\](.*)$/
