@@ -1,5 +1,5 @@
 $(function(){
-    $.get('https://raw.githubusercontent.com/Maaaaxx/cloudMusic/master/lyric.json').then(function(object){
+    $.get('https://www.easy-mock.com/mock/5ae014a26300cf5b6e954838/lyric').then(function(object){
         let {lyric} = object
         let lycArr = lyric.split('\n')
         let reg = /^\[(.+)\](.*)$/
